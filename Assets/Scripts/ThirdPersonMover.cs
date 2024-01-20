@@ -8,8 +8,13 @@ public class ThirdPersonMover : MonoBehaviour
     [SerializeField] private float _moveSpeed = 5f;
     
     private Rigidbody _rigidbody;
+    private Animator _animator;
 
-    private void Awake() => _rigidbody = GetComponent<Rigidbody>();
+    private void Awake()
+    { 
+        _rigidbody = GetComponent<Rigidbody>();
+        _animator = GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -26,6 +31,8 @@ public class ThirdPersonMover : MonoBehaviour
         velocity *= _moveSpeed * Time.fixedDeltaTime;
         Vector3 offset = transform.rotation * velocity; // Direction we're facing / Directional Vector * Speed.
         _rigidbody.MovePosition(transform.position + offset);
+
+        _animator.SetFloat("Speed", vertical);
 
     }
 }
