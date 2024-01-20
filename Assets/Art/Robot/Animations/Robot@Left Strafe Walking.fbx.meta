@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d59d2564867f2c49bc99d12b139796e
+guid: 4b14834bb2926c342bb3dd56a16d12f1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -33,7 +33,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Walking
+      name: Left Walking
       takeName: mixamo.com
       internalID: 1827226128182048838
       firstFrame: 0
