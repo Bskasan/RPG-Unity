@@ -773,7 +773,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3db43e0820a37d4e9b2856e143cb65e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _storyText: {fileID: 0}
+  _dialog: {fileID: 4900000, guid: 6cf48bb6d89824cc69e35b43f9a1aca6, type: 3}
+  _storyText: {fileID: 530678507}
   _choiceButtons: []
 --- !u!1 &180544348
 GameObject:
