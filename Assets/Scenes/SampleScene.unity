@@ -14620,6 +14620,7 @@ GameObject:
   - component: {fileID: 1618784398}
   - component: {fileID: 1618784399}
   - component: {fileID: 1618784400}
+  - component: {fileID: 1618784401}
   m_Layer: 0
   m_Name: NPC Drone
   m_TagString: Untagged
@@ -14678,6 +14679,27 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 3
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &1618784401
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618784397}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a5bc835fc79e9d449844c1bce94bc77, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!43 &1631256397
 Mesh:
   m_ObjectHideFlags: 0
