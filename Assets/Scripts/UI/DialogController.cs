@@ -8,15 +8,14 @@ using System;
 using System.Text;
 
 public class DialogController : MonoBehaviour
-{
-    [SerializeField] private TextAsset _dialog;
+{ 
     [SerializeField] private TMP_Text _storyText;
     [SerializeField] private Button[] _choiceButtons;
 
     private Story _story;
 
     [ContextMenu("Start Dialog")]
-    public void StartDialog()
+    public void StartDialog(TextAsset _dialog)
     {
         _story = new Story(_dialog.text);
         RefreshView();
