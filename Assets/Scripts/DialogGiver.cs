@@ -8,7 +8,8 @@ public class DialogGiver : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<ThirdPersonMover>() != null) 
+        var player = other.GetComponent<ThirdPersonMover>();
+        if ( player != null) 
         {
             FindObjectOfType<DialogController>().StartDialog(_dialog);
         }
