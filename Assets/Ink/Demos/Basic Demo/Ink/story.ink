@@ -1,6 +1,6 @@
 - I looked at Monsieur Fogg 
 * Open the door please!
-  Okay, Let's begin the adventure. The door is opening!!! #OpenDoor
+  Okay, Let's begin the adventure. The door is opening!!! #E.OpenGreenDoor
 *   ... and I could contain myself no longer.
     'What is the purpose of our journey, Monsieur?'
     'A wager,' he replied.
