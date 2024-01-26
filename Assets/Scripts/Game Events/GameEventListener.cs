@@ -5,9 +5,11 @@ using UnityEngine.Events;
 public class GameEventListener : MonoBehaviour
 {
     [SerializeField] private UnityEvent _unityEvent;
+    [SerializeField] private GameEvent _gameEvent;
 
-    public void RaiseEvent()
-    {
-        _unityEvent.Invoke();
-    }
+    private void Awake() => _gameEvent.Register(this);
+
+    private void OnDisable() => _gameEvent.Deregister(this);
+
+    public void RaiseEvent() => _unityEvent.Invoke();
 }
