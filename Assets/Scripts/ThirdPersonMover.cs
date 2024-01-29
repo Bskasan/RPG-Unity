@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 
 public class ThirdPersonMover : MonoBehaviour
@@ -9,6 +10,7 @@ public class ThirdPersonMover : MonoBehaviour
     
     private Rigidbody _rigidbody;
     private Animator _animator;
+    private float _mouseMovement;
 
     private void Awake()
     { 
@@ -17,14 +19,13 @@ public class ThirdPersonMover : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        var mouseMovement = Input.GetAxis("Mouse X");
-        transform.Rotate(0, mouseMovement * Time.deltaTime * _turnSpeed, 0); // Rotate on Y axis.
-    }
+    private void Update() => _mouseMovement += Input.GetAxis("Mouse X");
 
     private void FixedUpdate()
     {
+        transform.Rotate(0, _mouseMovement * Time.deltaTime * _turnSpeed, 0); // Rotate on Y axis.
+        _mouseMovement = 0f;
+
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
