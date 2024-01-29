@@ -1228,6 +1228,7 @@ GameObject:
   - component: {fileID: 171573494}
   - component: {fileID: 171573493}
   - component: {fileID: 171573497}
+  - component: {fileID: 171573498}
   m_Layer: 5
   m_Name: '[ CANVAS ] Dialog'
   m_TagString: Untagged
@@ -1337,6 +1338,18 @@ MonoBehaviour:
   - {fileID: 1001588875}
   - {fileID: 853541478}
   _animator: {fileID: 1673267955}
+--- !u!225 &171573498
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171573492}
+  m_Enabled: 1
+  m_Alpha: 0.4
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &180544348
 GameObject:
   m_ObjectHideFlags: 0
