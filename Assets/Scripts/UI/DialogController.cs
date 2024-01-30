@@ -14,13 +14,30 @@ public class DialogController : MonoBehaviour
     [SerializeField] private Animator _animator;
      
     private Story _story;
-    
+    private CanvasGroup _canvasGroup;
+
+    private void Awake() => _canvasGroup = GetComponent<CanvasGroup>();
 
     [ContextMenu("Start Dialog")]
     public void StartDialog(TextAsset _dialog)
     {
         _story = new Story(_dialog.text);
         RefreshView();
+        ToggleCanvasOn();
+    }
+
+    private void ToggleCanvasOn()
+    {
+        _canvasGroup.alpha = 0.8f;
+        _canvasGroup.interactable = true;
+        _canvasGroup.blocksRaycasts = true;
+    }
+
+    private void ToggleCanvasOff()
+    {
+        _canvasGroup.alpha = 0.0f;
+        _canvasGroup.interactable = false;
+        _canvasGroup.blocksRaycasts = false;
     }
 
     private void RefreshView()
