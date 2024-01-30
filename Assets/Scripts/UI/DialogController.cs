@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -16,7 +14,11 @@ public class DialogController : MonoBehaviour
     private Story _story;
     private CanvasGroup _canvasGroup;
 
-    private void Awake() => _canvasGroup = GetComponent<CanvasGroup>();
+    private void Awake()
+    {
+        _canvasGroup = GetComponent<CanvasGroup>();
+        ToggleCanvasOff();
+    }
 
     [ContextMenu("Start Dialog")]
     public void StartDialog(TextAsset _dialog)
@@ -53,14 +55,23 @@ public class DialogController : MonoBehaviour
 
         _storyText.SetText(storyTextBuilder);
 
+        if(_story.currentChoices.Count == 0)
+            ToggleCanvasOff();
+        else
+            ShowChoiceButtons();
+
+    }
+
+    private void ShowChoiceButtons()
+    {
         for (int i = 0; i < _choiceButtons.Length; i++)
         {
             var button = _choiceButtons[i];
             button.gameObject.SetActive(i < _story.currentChoices.Count);
             button.onClick.RemoveAllListeners();
             if (i < _story.currentChoices.Count)
-            { 
-                Choice choice = _story.currentChoices[i]; 
+            {
+                Choice choice = _story.currentChoices[i];
                 button.GetComponentInChildren<TMP_Text>().SetText(choice.text);
                 button.onClick.AddListener(() =>
                 {
@@ -69,8 +80,6 @@ public class DialogController : MonoBehaviour
                 });
             }
         }
-
-        
     }
 
     private void HandleTags()
