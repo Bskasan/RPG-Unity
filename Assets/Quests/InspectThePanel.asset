@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74689c58ffc72a146972c7a065f72309, type: 3}
   m_Name: InspectThePanel
   m_EditorClassIdentifier: 
-  Steps: []
+  _name: Push the Button
+  _description: Help Out Moni
+  _notes: I don't know what is our second step yet
+  Steps:
+  - Objectives: []
