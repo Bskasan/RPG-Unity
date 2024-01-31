@@ -6,10 +6,10 @@ I've been waiting for you, Moni.. I am glad that you're finally here.
       Ahh okay, bye then, thanks for nothing.. -> END
     
 == instructions ==
-Go to the panel, it's in the back room. #E.HideGreenDoor #E.ShowBackRoom
+Go to the panel, it's in the back room. #E.HideGreenDoor #E.ShowControlPanel
     * Why can't you do that?
       I am too wide..
-      * * Okay, I'm on it.
+      * * Okay, I'm on it. #E.HideControlPanel
           Thanks! -> END
     
 - -> END
