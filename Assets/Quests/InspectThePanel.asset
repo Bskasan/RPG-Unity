@@ -16,4 +16,6 @@ MonoBehaviour:
   _description: Help Out Moni
   _notes: I don't know what is our second step yet
   Steps:
-  - Objectives: []
+  - _instructions: 
+    Objectives:
+    - _objectiveType: 2
