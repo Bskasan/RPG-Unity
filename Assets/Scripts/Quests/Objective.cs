@@ -12,4 +12,6 @@ public class Objective
         Item,
         Kill,
     }
+
+    public override string ToString() => _objectiveType.ToString();
 }

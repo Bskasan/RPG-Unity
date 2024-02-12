@@ -35206,6 +35206,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0646e04dfe960e341a4eb4c42f8725c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _selectedQuest: {fileID: 11400000, guid: 51ca2223f784481499de6c29581f5311, type: 2}
+  _selectedStep:
+    _instructions: 
+    Objectives: []
   _nameText: {fileID: 1676334871}
   _descriptionText: {fileID: 461902947}
   _currentObjectivesText: {fileID: 206138077}
