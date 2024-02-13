@@ -11,14 +11,14 @@ public class ToggleablePanel : MonoBehaviour
         Hide();
     }
 
-    protected void Show()
+    public void Show()
     {
         _canvasGroup.alpha = 0.8f;
         _canvasGroup.interactable = true;
         _canvasGroup.blocksRaycasts = true;
     }
 
-    protected void Hide()
+    public void Hide()
     {
         _canvasGroup.alpha = 0.0f;
         _canvasGroup.interactable = false;
