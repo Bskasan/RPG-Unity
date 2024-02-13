@@ -6,7 +6,7 @@ public class QuestManager : MonoBehaviour
 {
     [SerializeField] private QuestPanel _questPanel;
 
-    private List<Quest> _activeQuests;
+    private List<Quest> _activeQuests = new List<Quest>();
 
     public static QuestManager Instance { get; private set; }
 
