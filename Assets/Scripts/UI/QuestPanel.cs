@@ -13,6 +13,7 @@ public class QuestPanel : MonoBehaviour
     [SerializeField] private TMP_Text _currentObjectivesText;
     [SerializeField] private Image _iconImage;
 
+
     [ContextMenu("Bind")]
     public void Bind()
     {
@@ -22,6 +23,12 @@ public class QuestPanel : MonoBehaviour
 
         _selectedStep = _selectedQuest.Steps.FirstOrDefault();
         DisplayStepInstructionsAndObjectives();
+    }
+
+    public void SelectQuest(Quest quest)
+    {
+        _selectedQuest = quest;
+        Bind();
     }
 
     private void DisplayStepInstructionsAndObjectives()
