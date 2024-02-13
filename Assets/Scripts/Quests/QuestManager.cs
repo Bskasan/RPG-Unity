@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
-    [SerializeField] private object _questPanel;
+    [SerializeField] private QuestPanel _questPanel;
 
     private List<Quest> _activeQuests;
+
+    public static QuestManager Instance { get; private set; }
+
+    private void Awake() => Instance = this;
 
     public void AddQuest(Quest quest)
     {

@@ -25,12 +25,6 @@ public class QuestPanel : MonoBehaviour
         DisplayStepInstructionsAndObjectives();
     }
 
-    public void SelectQuest(Quest quest)
-    {
-        _selectedQuest = quest;
-        Bind();
-    }
-
     private void DisplayStepInstructionsAndObjectives()
     {
         StringBuilder builder = new StringBuilder();
@@ -46,4 +40,12 @@ public class QuestPanel : MonoBehaviour
 
         _currentObjectivesText.SetText(builder.ToString());
     }
+
+    public void SelectQuest(Quest quest)
+    {
+        _selectedQuest = quest;
+        Bind();
+    }
 }
+
+
