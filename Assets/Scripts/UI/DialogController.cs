@@ -5,41 +5,20 @@ using Ink.Runtime;
 using System;
 using System.Text;
 
-public class DialogController : MonoBehaviour
+public class DialogController : ToggleablePanel
 { 
     [SerializeField] private TMP_Text _storyText;
     [SerializeField] private Button[] _choiceButtons;
     [SerializeField] private Animator _animator;
      
     private Story _story;
-    private CanvasGroup _canvasGroup;
-
-    private void Awake()
-    {
-        _canvasGroup = GetComponent<CanvasGroup>();
-        ToggleCanvasOff();
-    }
 
     [ContextMenu("Start Dialog")]
     public void StartDialog(TextAsset _dialog)
     {
         _story = new Story(_dialog.text);
         RefreshView();
-        ToggleCanvasOn();
-    }
-
-    private void ToggleCanvasOn()
-    {
-        _canvasGroup.alpha = 0.8f;
-        _canvasGroup.interactable = true;
-        _canvasGroup.blocksRaycasts = true;
-    }
-
-    private void ToggleCanvasOff()
-    {
-        _canvasGroup.alpha = 0.0f;
-        _canvasGroup.interactable = false;
-        _canvasGroup.blocksRaycasts = false;
+        Show();
     }
 
     private void RefreshView()
@@ -56,7 +35,7 @@ public class DialogController : MonoBehaviour
         _storyText.SetText(storyTextBuilder);
 
         if(_story.currentChoices.Count == 0)
-            ToggleCanvasOff();
+            Hide();
         else
             ShowChoiceButtons();
 
