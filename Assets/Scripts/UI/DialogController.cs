@@ -73,8 +73,8 @@ public class DialogController : ToggleablePanel
             }
             else if (tag.StartsWith("Q."))
             {
-                string eventName = tag.Remove(0, 2);
-                QuestManager.Instance.AddQuestByName.RaiseEvent(questName);
+                string questName = tag.Remove(0, 2);
+                QuestManager.Instance.AddQuestByName(questName);
             }
         }
     }
