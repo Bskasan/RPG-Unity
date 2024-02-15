@@ -9,4 +9,9 @@ public class Step
 
     public string Instructions => _instructions;
     public List<Objective> Objectives;
+
+    public bool HasAllObjectivesCompleted()
+    {
+        return Objectives.TrueForAll(t => t.IsCompleted);
+    }
 }

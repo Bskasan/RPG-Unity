@@ -13,5 +13,7 @@ public class Objective
         Kill,
     }
 
+    public bool IsCompleted { get; }
+
     public override string ToString() => _objectiveType.ToString();
 }
