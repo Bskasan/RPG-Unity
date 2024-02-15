@@ -28,4 +28,12 @@ public class QuestManager : MonoBehaviour
         else
             Debug.LogError($"Quest with name {questName} not found.");
     }
+
+    public void ProgressQuests()
+    { 
+        foreach (var quest in _activeQuests)
+        {
+            quest.TryProgress();
+        }
+    }
 }

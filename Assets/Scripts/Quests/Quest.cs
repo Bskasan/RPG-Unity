@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,4 +20,9 @@ public class Quest : ScriptableObject
     public string Description => _description;
 
     public Sprite Sprite => _sprite;
+
+    public void TryProgress()
+    {
+        
+    }
 }
