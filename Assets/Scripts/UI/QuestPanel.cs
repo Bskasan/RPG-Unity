@@ -32,7 +32,7 @@ public class QuestPanel : ToggleablePanel
         {
             builder.AppendLine(_selectedStep.Instructions);
 
-            foreach (var objective in _selectedStep.Objectives)
+            foreach (var objective in _selectedStep.Objective)
             {
                 builder.AppendLine(objective.ToString());
             }

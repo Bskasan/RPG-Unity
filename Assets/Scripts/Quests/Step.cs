@@ -8,10 +8,10 @@ public class Step
     [SerializeField] private string _instructions;
 
     public string Instructions => _instructions;
-    public List<Objective> Objectives;
+    public List<Objective> Objective;
 
     public bool HasAllObjectivesCompleted()
     {
-        return Objectives.TrueForAll(t => t.IsCompleted);
+        return Objective.TrueForAll(t => t.IsCompleted);
     }
 }
