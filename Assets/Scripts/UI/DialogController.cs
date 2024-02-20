@@ -18,7 +18,7 @@ public class DialogController : ToggleablePanel
     {
         _story = new Story(_dialog.text);
         RefreshView();
-        Show();
+        base.Show();
     }
 
     private void RefreshView()
