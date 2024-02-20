@@ -7,7 +7,7 @@ I've been waiting for you, Moni.. I am glad that you're finally here.
     
 == instructions ==
 Go to the panel, it's in the back room. #E.HideGreenDoor #E.ShowControlPanel
-    * Why can't you do that?
+    * Why can't you do that? #Q.InspectThePanel
       I am too wide..
       * * Okay, I'm on it. #E.HideControlPanel
           Thanks! -> END

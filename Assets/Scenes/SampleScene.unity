@@ -19682,7 +19682,6 @@ GameObject:
   - component: {fileID: 1618784399}
   - component: {fileID: 1618784400}
   - component: {fileID: 1618784401}
-  - component: {fileID: 1618784402}
   m_Layer: 0
   m_Name: NPC Drone
   m_TagString: Untagged
@@ -19762,19 +19761,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1618784402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618784397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15df6eb835daa7b4e844e23ecb2603fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _quest: {fileID: 11400000, guid: 51ca2223f784481499de6c29581f5311, type: 2}
 --- !u!43 &1631256397
 Mesh:
   m_ObjectHideFlags: 0
