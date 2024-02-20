@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 [CreateAssetMenu(menuName = " Quest ")]
 public class Quest : ScriptableObject
 {
-    [FormerlySerializedAs("_name")][SerializeField] private string _displayName;
+    [SerializeField] private string _displayName;
     [SerializeField] private string _description;
 
     [Tooltip("Designer / Programmer notes, not visible to player")]

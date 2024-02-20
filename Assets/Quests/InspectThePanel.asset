@@ -17,5 +17,6 @@ MonoBehaviour:
   _notes: I don't know what is our second step yet
   _sprite: {fileID: 21300000, guid: bb160ab818cea664fbac303919b70ba6, type: 3}
   Steps:
-  - _instructions: 
-    Objective: []
+  - _instructions: Go look at panel
+    Objective:
+    - _objectiveType: 0

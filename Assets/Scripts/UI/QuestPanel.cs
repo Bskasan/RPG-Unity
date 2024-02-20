@@ -18,6 +18,7 @@ public class QuestPanel : ToggleablePanel
     public void Bind()
     {
         _iconImage.sprite = _selectedQuest.Sprite;
+
         _nameText.SetText(_selectedQuest.DisplayName);
         _descriptionText.SetText(_selectedQuest.Description);
 
