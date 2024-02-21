@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4a3892a275f6e43a23cc4429fc197f, type: 3}
   m_Name: Looked At Panel
   m_EditorClassIdentifier: 
-  Value: 1
+  Value: 0

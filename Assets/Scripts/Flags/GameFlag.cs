@@ -7,7 +7,5 @@ public class GameFlag : ScriptableObject
 {
     public bool Value;
 
-    private void OnEnable() => Value = default;
-
-
+    private void OnEnable() => Value = default; // means false
 }
